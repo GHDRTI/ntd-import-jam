@@ -1,0 +1,29 @@
+{
+    "version": "0.1",
+    "name": "NTD Data Importer for Joint Application Matrix",
+    "description": "This app imports the Joint Application Matrix workbooks",
+    "launch_path": "index.html",
+    "appType": "APP",
+    "icons": {
+        "16": "assets/icons/16.png",
+        "48": "assets/icons/48.png",
+        "128": "assets/icons/128.png"
+    },
+    "developer": {
+        "name": "Me",
+        "url": "http://me.com"
+    },
+    "default_locale": "en",
+    "activities": {
+        "dhis": {
+            "href": "*",
+            "namespace": "jrm4"
+        }
+    },
+    "authorities": [
+         "MY_APP_ADD_NEW",
+         "MY_APP_UPDATE",
+         "MY_APP_DELETE"
+         ]
+    
+}
