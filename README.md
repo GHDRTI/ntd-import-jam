@@ -2,6 +2,8 @@
 
 ## Build
 
-1. ng build --base-href .
-2. zip dist folders contents
-3. Upload resulting zip file to DHIS2 app management
+`deploy.sh`
+
+## Run
+ 
+`ng serve`
