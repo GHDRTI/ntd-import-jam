@@ -1,7 +1,7 @@
 {
     "version": "0.1",
-    "name": "NTD Data Importer for Joint Application Matrix",
-    "description": "This app imports the Joint Application Matrix workbooks",
+    "name": "NTD Data Exporter for Joint Application Package",
+    "description": "This app exports the Joint Application Package workbooks",
     "launch_path": "index.html",
     "appType": "APP",
     "icons": {
