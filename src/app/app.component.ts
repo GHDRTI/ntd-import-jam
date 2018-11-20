@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent {
-  title = 'NTD Data Importer for the Joint Application Package';
+  title = 'NTD Data Exporter for the Joint Application Package';
 }
