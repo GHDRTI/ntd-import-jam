@@ -1,63 +1,6 @@
-<html>
-<head></head>
-
-<body>
 <div class="container">
-
-<div class="float-right h-100">
+<div class="float-right">
 <a href="/">Home</a>
 </div>
-<br><br><br>
- 
-<div class="row">
-  <div class="col-sm">
-      <h2>{{ title }}</h2>
-      <p>Use this form to export data into one of the  <a href="http://www.who.int/neglected_diseases/preventive_chemotherapy/reporting/en/">WHO Preventative Chemotherapy </a> reporting forms. </p>
-  </div>
 </div>
-
-<div class="row">
-  <div class="col-sm">
-
-    <div id="form-messages"></div>
-
-    <form action="https://m1t3fvf8cd.execute-api.us-east-1.amazonaws.com/default/queue-jap-export" method="POST" id="workbook-form">
-        <fieldset>
-
-          <div class="form-group">
-            <label for="yearSelect">Year</label>
-            <select name="year" class="form-control" id="yearSelect">
-              <option value="2017">2017</option>
-            </select>
-          </div>
-          
-          <div class="form-group">
-            <label for="formSelect">Form</label>
-            <select name="type" class="form-control" id="formSelect">
-              <option value="epirf">WHO_EPIRF_PC</option>
-              <option value="epirf">WHO_JRF_PC_v3</option>
-              <option value="epirf">WHO_JRSM_PC_v3</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="profileSelect">Profile</label>
-            <select name="to" class="form-control" id="profileSelect">
-              <option value="apreston@rti.org">AMP</option>
-              <option value="apavluck@rti.org">AP</option>
-              <option value="adam@callawaywilson.com">AW</option>
-            </select>
-          </div>
-
-          <input type="submit" class="btn btn-primary" value="Submit" />
-
-      </fieldset>
-    </form>
-  </div>
-</div>
-
-
-</div>
-
-</body>
-</html>
+<app-workbook-request-form></app-workbook-request-form>

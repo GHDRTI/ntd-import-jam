@@ -1,0 +1,49 @@
+<div class="container">
+    
+<div class="row">
+  <div class="col-sm">
+      <h1>{{ title }}</h1>
+      <p>Use this form to export data into one of the  <a href="http://www.who.int/neglected_diseases/preventive_chemotherapy/reporting/en/">WHO Preventative Chemotherapy </a> reporting forms. </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+ 
+    <form (ngSubmit)="onSubmit()" #workbookRequestForm="ngForm">
+      
+         <div class="form-group">
+            <label for="yearSelect">Year</label>
+            
+            <select name="year" class="form-control" id="yearSelect">
+              <option value="2017">2017</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="formSelect">Form</label>
+            <select name="type" class="form-control" id="formSelect">
+              <option value="epirf">WHO_EPIRF_PC</option>
+              <option value="jrf">WHO_JRF_PC_v3</option>
+              <option value="jrsm">WHO_JRSM_PC_v3</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="profileSelect">Profile</label>
+            <select name="to" class="form-control" id="profileSelect">
+              <option value="apreston@rti.org">AMP</option>
+              <option value="apavluck@rti.org">AP</option>
+              <option value="adam@callawaywilson.com">AW</option>
+            </select>
+          </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+</div>
+  </div>
+
+</div>  
+
+
+    
