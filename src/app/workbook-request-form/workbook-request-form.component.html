@@ -6,6 +6,15 @@
       <p>Use this form to export data into one of the  <a href="http://www.who.int/neglected_diseases/preventive_chemotherapy/reporting/en/">WHO Preventative Chemotherapy </a> reporting forms. </p>
   </div>
 </div>
+
+<div class="row messages">
+  <div class="col-sm">
+    <div [hidden]="!submitted">
+      <ngbd-alert-selfclosing></ngbd-alert-selfclosing>
+    </div>
+ </div>
+</div>
+
 <div class="row">
   <div class="col-sm">
  
@@ -13,15 +22,16 @@
       
          <div class="form-group">
             <label for="yearSelect">Year</label>
-            
-            <select name="year" class="form-control" id="yearSelect">
+
+            <select name="year" class="form-control" id="yearSelect" [(ngModel)]="model.year" >
               <option value="2017">2017</option>
             </select>
+
           </div>
           
           <div class="form-group">
             <label for="formSelect">Form</label>
-            <select name="type" class="form-control" id="formSelect">
+            <select name="type" class="form-control" id="formSelect" [(ngModel)]="model.type" >
               <option value="epirf">WHO_EPIRF_PC</option>
               <option value="jrf">WHO_JRF_PC_v3</option>
               <option value="jrsm">WHO_JRSM_PC_v3</option>
@@ -30,9 +40,9 @@
 
           <div class="form-group">
             <label for="profileSelect">Profile</label>
-            <select name="to" class="form-control" id="profileSelect">
+            <select name="to" class="form-control" id="profileSelect" [(ngModel)]="model.to" >
               <option value="apreston@rti.org">AMP</option>
-              <option value="apavluck@rti.org">AP</option>
+              <option value="apavluck@sightsavers.org">AP</option>
               <option value="adam@callawaywilson.com">AW</option>
             </select>
           </div>
