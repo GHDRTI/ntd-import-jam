@@ -14,11 +14,12 @@ export class NgbdAlertSelfclosing implements OnInit {
 
   private _success = new Subject<string>();
 
-  staticAlertClosed = false;
+  staticAlertClosed = true;
   successMessage: string;
 
   ngOnInit(): void {
     
+    this.staticAlertClosed = false;
     console.log("starting again again..."); 
     
     setTimeout(() => this.staticAlertClosed = true, 8000);

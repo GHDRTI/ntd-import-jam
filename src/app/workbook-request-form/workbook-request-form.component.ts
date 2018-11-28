@@ -19,6 +19,7 @@ export class WorkbookRequestFormComponent  {
   @ViewChild(NgbdAlertSelfclosing)
   private alert: NgbdAlertSelfclosing;
 
+
   constructor(private http: HttpClient) {}
   
   url = 'https://m1t3fvf8cd.execute-api.us-east-1.amazonaws.com/default/queue-jap-export';  
@@ -43,6 +44,8 @@ export class WorkbookRequestFormComponent  {
      var workbook = JSON.stringify(this.model);
 	   var req = this.http.post(this.url, workbook, this.httpOptions).subscribe();
      console.log("just submitted again ");
+     this.alert.ngOnInit();
+
 
      
 	
