@@ -41,8 +41,8 @@ export class WorkbookRequestFormComponent  {
   	
   	 this.submitted = true;
      var workbook = JSON.stringify(this.model);
-	   var req = this.http.post(this.url, workbook, this.httpOptions);
-     console.log("just submitted again " + alert);
+	   var req = this.http.post(this.url, workbook, this.httpOptions).subscribe();
+     console.log("just submitted again ");
 
      
 	
